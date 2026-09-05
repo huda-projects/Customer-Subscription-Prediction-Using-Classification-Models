@@ -57,15 +57,17 @@ The initial results showed that while the models achieved relatively high accura
 <img src="Images/ph12.png" width="500">
 
 After hyperparameter tuning, the F1-scores improved from approximately 0.33–0.40 in the default models to above 0.44, with the Decision Tree reaching the highest score of 0.48.
+
 Since the main business goal is to identify more potential subscribers rather than simply achieve high overall accuracy, we placed greater importance on the F1-score and recall when selecting the final model. After tuning, the Decision Tree achieved the highest F1-score of 0.4816 and a recall of 62.82%, meaning it was able to identify a much larger proportion of the customers who actually subscribed. Based on this performance and the project's business priority of reducing missed potential subscribers, the Decision Tree was selected as the final classification model.
-The following example demonstrates how the Decision Tree model is used to predict whether a customer is likely to subscribe to a term deposit.
-It shows how the model uses the customer's available information to produce a subscription prediction.
+
+The following example demonstrates how the Decision Tree model is used to predict whether a customer is likely to subscribe to a term deposit. It shows how the model uses the customer's available information to produce a subscription prediction.
 
 <img src="Images/ph13.png" width="500">
 
 ## Business Recommendation
 
 Based on the analysis, the bank can improve the efficiency of its marketing campaigns by focusing its efforts on customers who show a higher likelihood of subscribing to a term deposit. The data analysis identified meaningful differences in subscription rates across several customer and campaign characteristics, particularly job type, contact method, campaign month, and previous campaign outcome, with customers who had a successful previous campaign outcome showing a particularly high subscription rate. These findings can help the bank better understand which customer groups are more likely to respond positively to its marketing efforts.
+
 From a predictive perspective, the Decision Tree was selected as the preferred model because it achieved the highest score. This means the model can identify a larger proportion of customers who are likely to subscribe, which aligns with the business objective of reducing missed opportunities. The bank can therefore use the Decision Tree to score new customers based on their available information and prioritize those with a higher predicted likelihood of subscription for future marketing campaigns. This approach can help the bank use its calling resources more efficiently, reduce unnecessary contacts, and improve the potential number of successful term-deposit subscriptions.
 
 
